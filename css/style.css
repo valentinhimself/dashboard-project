@@ -1,0 +1,50 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.main-container {
+    height: 100vh;
+    display: grid;
+    grid-template-areas: 
+                        "sidebar header header header       header header header header        header header "
+                        "sidebar section section section    section section section section    section section"
+                        "sidebar section section section    section section section section    section section"
+                        "sidebar section section section    section section section section    section section";
+}
+
+aside {
+    grid-area: sidebar;
+    background: #1992d4;
+    color: white;
+}
+header {
+    grid-area: header;
+    background: #ffffff;
+}
+.main-section {
+    grid-area: section;
+    background: #e2e8f0;
+}
+
+li {
+    list-style: none;
+}
+
+.aside__ul, .aside2__ul {
+    width: 90%;
+    padding-left: 10%;
+}
+
+aside h1 {
+    padding: 1rem 0 2rem 10%;
+}
+
+.aside2__ul {
+    padding: 1rem 0 0 10%;
+}
+
+ul li {
+    padding: 0.5rem;
+}
