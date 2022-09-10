@@ -6,24 +6,30 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dashboard</title>
     <link rel="stylesheet" href="./css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
 </head>     
 <body>
     <div class="main-container">
         <header></header>
         <aside>
-            <h1>Dashboard</h1>
+            <h1>
+            <svg id="icon_dashboard" viewBox="0 0 24 24"><path d="M13,3V9H21V3M13,21H21V11H13M3,21H11V15H3M3,13H11V3H3V13Z">
+            </path></svg>
+                <span>Dashboard</span></h1>
             <ul class="aside__ul">
-                <li>Home</li>
-                <li>Profile</li>
-                <li>Messages</li>
-                <li>History</li>
-                <li>Tasks</li>
-                <li>Communities</li>
+                <li> <img src="./assets/home.svg" alt="home"> <span>Home</span></li>
+                <li> <img src="./assets/account-circle.svg" alt="account"> <span>Profile</span></li>
+                <li> <img src="./assets/message-reply.svg" alt="messages">  <span>Messages</span></li>
+                <li> <img src="./assets/clock-time-three.svg" alt="history"> <span>History</span></li>
+                <li> <img src="./assets/note-multiple.svg" alt="tesks"> <span>Tasks</span></li>
+                <li> <img src="./assets/account-group.svg" alt="communities"> <span>Communities</span></li>
             </ul>
             <ul class="aside2__ul">
-                <li>Settings</li>
-                <li>Support</li>
-                <li>Privacy</li>
+                <li> <img src="./assets/cog.svg" alt="settings"> <span>Settings</span></li>
+                <li> <img src="./assets/help-box.svg" alt="support"> <span>Support</span></li>
+                <li> <img src="./assets/shield-check.svg" alt="privacy"> <span>Privacy</span></li>
             </ul>
         </aside>
         <section class="main-section"></section>

@@ -4,6 +4,15 @@
     box-sizing: border-box;
 }
 
+:root {
+    --dashbord-font-size: 1.5rem; 
+    --aside-text-color: white;
+}
+
+body {
+    font-family: 'Roboto', serif;
+}
+
 .main-container {
     height: 100vh;
     display: grid;
@@ -17,7 +26,8 @@
 aside {
     grid-area: sidebar;
     background: #1992d4;
-    color: white;
+    color: var(--aside-text-color, white);
+    font-weight: 700;
 }
 header {
     grid-area: header;
@@ -38,13 +48,35 @@ li {
 }
 
 aside h1 {
-    padding: 1rem 0 2rem 10%;
+    padding: 2rem 0 1rem 10%;
+    display: grid;
+    grid-template-columns: auto auto;
+    justify-content: start;
+    align-items: center;
+    font-size: var(--dashbord-font-size, 1.5rem)
 }
 
 .aside2__ul {
     padding: 1rem 0 0 10%;
 }
 
-ul li {
-    padding: 0.5rem;
+aside ul li {
+    padding: 0.5rem 0;
+    display: flex;
+    align-items: end;
+    gap: 0.5rem;
+    transition: all .25s;
+}
+
+aside ul li:hover {
+    scale: 1.1;
+}
+
+aside svg {
+    fill: var(--aside-text-color, white);
+    width: calc(var(--dashbord-font-size, 1.5rem) + 1rem) 
+}
+
+aside h1 span {
+    padding-left: 0.5rem;
 }
