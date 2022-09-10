@@ -65,16 +65,16 @@ aside ul li {
     display: flex;
     align-items: end;
     gap: 0.5rem;
-    transition: all .25s;
+    transition: all .2s;
 }
 
 aside ul li:hover {
-    scale: 1.1;
+    scale: 1.05;
 }
 
 aside svg {
     fill: var(--aside-text-color, white);
-    width: calc(var(--dashbord-font-size, 1.5rem) + 1rem) 
+    width: calc(var(--dashbord-font-size, 1.5rem) + 1rem);
 }
 
 aside h1 span {
