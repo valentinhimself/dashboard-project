@@ -20,6 +20,7 @@ body {
                         "sidebar header header header       header header header header        header header "
                         "sidebar section section section    section section section section    section section"
                         "sidebar section section section    section section section section    section section"
+                        "sidebar section section section    section section section section    section section"
                         "sidebar section section section    section section section section    section section";
 }
 
@@ -79,4 +80,22 @@ aside svg {
 
 aside h1 span {
     padding-left: 0.5rem;
+}
+
+header {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    padding: 1rem 2rem;
+}
+
+.search__div {
+    display: flex;
+    gap: 1rem;
+}
+
+input[type=search]{
+    background: rgba(229, 226, 226, 0.5);
+    width: 100%;
+    border: solid 1px gray;
+    border-radius: 15px;
 }
