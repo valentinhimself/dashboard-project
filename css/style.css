@@ -7,6 +7,8 @@
 :root {
     --dashbord-font-size: 1.5rem; 
     --aside-text-color: white;
+    --blue: #1992d4;
+    --blue-hover: #126fa0;
 }
 
 body {
@@ -17,18 +19,21 @@ body {
     height: 100vh;
     display: grid;
     grid-template-areas: 
-                        "sidebar header header header       header header header header        header header "
-                        "sidebar section section section    section section section section    section section"
-                        "sidebar section section section    section section section section    section section"
-                        "sidebar section section section    section section section section    section section"
-                        "sidebar section section section    section section section section    section section";
+                        "sidebar header header header   header"
+                        "sidebar section section section  section"
+                        "sidebar section section section  section"
+                        "sidebar section section section  section"
+                        "sidebar section section section  section"
+                        "sidebar section section section  section"
+                        "sidebar section section section  section";
 }
 
 aside {
     grid-area: sidebar;
-    background: #1992d4;
+    background: var(--blue);
     color: var(--aside-text-color, white);
     font-weight: 700;
+    min-width: 225px;
 }
 header {
     grid-area: header;
@@ -85,7 +90,8 @@ aside h1 span {
 header {
     display: grid;
     grid-template-columns: 2fr 1fr;
-    padding: 1rem 2rem;
+    padding: 0 2rem;
+    gap: 3rem;
 }
 
 .search__div {
@@ -98,4 +104,57 @@ input[type=search]{
     width: 100%;
     border: solid 1px gray;
     border-radius: 15px;
+}
+
+.greeting_div {
+    display: flex;
+    align-items: center;
+    font-weight: 700;
+    font-size: 1.25rem;
+    grid-row: 2 / -1;
+}
+
+.header-left {
+    display: grid;
+    align-items: center;
+    grid-template-rows: repeat(3, 1fr);
+}
+
+.header-right {
+    display: grid;
+    align-items: center;
+    grid-template-rows: repeat(3, 1fr);
+}
+.header-right div:nth-child(1) {
+    display: flex;
+    gap: 1rem;
+    justify-content: flex-end;
+}
+.header-right span {
+    display: flex;
+    align-items: center;
+    font-weight: 700;
+}
+.small-prfile-pic{
+    width: 28px;
+}
+
+.header-right div:nth-child(2) {
+    display: flex;
+    gap: 1rem;
+    grid-row: 2 / -1;
+}
+
+.header-right button {
+    background: var(--blue);
+    border: 1px solid var(--blue);
+    border-radius: 2rem;
+    padding: 1rem 2rem;
+    color: var(--aside-text-color);
+    font-weight: 700;
+    transition: all .2s;
+}
+
+.header-right button:hover {
+    background: var(--blue-hover);
 }
