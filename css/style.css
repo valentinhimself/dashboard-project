@@ -9,6 +9,7 @@
     --aside-text-color: white;
     --blue: #1992d4;
     --blue-hover: #126fa0;
+    --status-color: rgb(88, 87, 87);
 }
 
 body {
@@ -213,3 +214,27 @@ h2 {
     padding: 0 0 1rem 0;
 } 
 
+.trending {
+    background: white;
+    padding: 2rem 3rem;
+    border-radius: 10px;
+}
+.trending img {
+    width: 50px;
+}
+
+.trending>div{
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.25rem 0;
+}
+
+.user-name {
+    font-size: 0.9rem;
+}
+
+.status {
+    font-size: 0.8rem;
+    color: var(--status-color);
+}
