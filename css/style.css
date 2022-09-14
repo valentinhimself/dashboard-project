@@ -16,7 +16,6 @@ body {
 }
 
 .main-container {
-    height: 100vh;
     display: grid;
     grid-template-areas: 
                         "sidebar header header header   header"
@@ -42,6 +41,10 @@ header {
 .main-section {
     grid-area: section;
     background: #e2e8f0;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    padding: 1rem;
+    gap: 1rem;
 }
 
 li {
@@ -90,7 +93,7 @@ aside h1 span {
 header {
     display: grid;
     grid-template-columns: 2fr 1fr;
-    padding: 0 2rem;
+    padding: 0rem 2rem;
     gap: 3rem;
 }
 
@@ -117,13 +120,15 @@ input[type=search]{
 .header-left {
     display: grid;
     align-items: center;
-    grid-template-rows: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    padding: 0 0 1rem 0;
 }
 
 .header-right {
     display: grid;
     align-items: center;
-    grid-template-rows: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    padding: 0 0 1rem 0;
 }
 .header-right div:nth-child(1) {
     display: flex;
@@ -157,4 +162,33 @@ input[type=search]{
 
 .header-right button:hover {
     background: var(--blue-hover);
+}
+
+.project__div {
+    padding: 0 1rem;
+}
+
+h2 {
+    padding: 1rem;
+}
+
+.projects-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(200px,1fr));
+    gap: 1rem;
+}
+
+.card__div {
+    background:white;
+    min-height: 250px;
+    padding: 1rem;
+    border-radius: 10px;
+    border-left: 8px solid orange;
+    display: grid;
+    align-content: space-around;
+}
+
+.icons__div {
+    padding: 1rem 0 0 0;
+    justify-self: end;
 }
