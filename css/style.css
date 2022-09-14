@@ -174,7 +174,7 @@ h2 {
 
 .projects-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit,minmax(200px,1fr));
+    grid-template-columns: repeat(auto-fit,minmax(190px,1fr));
     gap: 1rem;
 }
 
@@ -192,3 +192,24 @@ h2 {
     padding: 1rem 0 0 0;
     justify-self: end;
 }
+
+.announcements {
+    background: white;
+    padding: 2rem 3rem;
+    border-radius: 10px;
+}
+
+.announcements h3 {
+    padding: 1rem 0 0.5rem 0;
+}
+
+.announcements div:nth-child(2) {
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+    padding: 0 0 1rem 0;
+}
+
+.announcements div:first-child p{
+    padding: 0 0 1rem 0;
+} 
+
