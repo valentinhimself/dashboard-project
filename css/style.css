@@ -175,13 +175,13 @@ h2 {
 
 .projects-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit,minmax(190px,1fr));
+    grid-template-columns: repeat(auto-fit,minmax(300px,1fr));
     gap: 1rem;
 }
 
 .card__div {
     background:white;
-    min-height: 250px;
+    min-height: 220px;
     padding: 1rem;
     border-radius: 10px;
     border-left: 8px solid orange;
